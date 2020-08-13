@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "eden-test-archive/index.md",
+      "redirect_url": "/archive/eden-test-archive-archive-docset1/index",
+      "redirect_document_id": false
+    }
+  ]
+}
