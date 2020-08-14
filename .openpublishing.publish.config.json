@@ -44,54 +44,6 @@
       ]
     },
     {
-      "docset_name": "eden-test-archive-moniker",
-      "build_source_folder": "eden-test-archive-moniker",
-      "build_output_subfolder": "eden-test-archive-moniker",
-      "locale": "en-us",
-      "monikers": [
-        "netframework-4.5.1",
-        "netframework-4.5.2"
-      ],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "base_path": "dotnet",
-      "site_name": "Docs",
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ]
-      },
-      "ECMA2Yaml": {
-        "SourceXmlFolder": "eden-test-archive-moniker/xml",
-        "OutputYamlFolder": "eden-test-archive-moniker/api",
-        "Flatten": true,
-        "id": "eden-test-archive-moniker",
-        "SDPMode": true
-      },
-      "SplitTOC": [
-        "eden-test-archive-moniker/api/eden-test-archive-moniker/toc.yml"
-      ],
-      "DiffFolder": [
-        "eden-test-archive-moniker/api"
-      ]
-    },
-    {
       "docset_name": "eden-test-archive-monikerv2",
       "build_source_folder": "eden-test-archive-monikerv2",
       "build_output_subfolder": "eden-test-archive-monikerv2",
