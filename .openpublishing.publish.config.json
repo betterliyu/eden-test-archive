@@ -78,17 +78,17 @@
         ]
       },
       "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
+        "SourceXmlFolder": "eden-test-archive-moniker/xml",
+        "OutputYamlFolder": "eden-test-archive-moniker/api",
         "Flatten": true,
-        "id": "dotnet-template",
+        "id": "eden-test-archive-moniker",
         "SDPMode": true
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "eden-test-archive-moniker/api/eden-test-archive-moniker/toc.yml"
       ],
       "DiffFolder": [
-        "dotnet/api"
+        "eden-test-archive-moniker/api"
       ]
     }
   ],
