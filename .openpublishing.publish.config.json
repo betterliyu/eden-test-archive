@@ -42,6 +42,54 @@
       "DiffFolder": [
         "dotnet/api"
       ]
+    },
+    {
+      "docset_name": "eden-test-archive-moniker",
+      "build_source_folder": "eden-test-archive-moniker",
+      "build_output_subfolder": "eden-test-archive-moniker",
+      "locale": "en-us",
+      "monikers": [
+        "netframework-4.5.1",
+        "netframework-4.5.2"
+      ],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "NetEnum": "Content",
+        "NetDelegate": "Content",
+        "NetNamespace": "Content",
+        "NetMember": "Content",
+        "NetType": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "base_path": "dotnet",
+      "site_name": "Docs",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
+          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
+          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
+        ],
+        "docset_postbuild": [
+          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
+        ]
+      },
+      "ECMA2Yaml": {
+        "SourceXmlFolder": "dotnet/xml",
+        "OutputYamlFolder": "dotnet/api",
+        "Flatten": true,
+        "id": "dotnet-template",
+        "SDPMode": true
+      },
+      "SplitTOC": [
+        "dotnet/api/dotnet-template/toc.yml"
+      ],
+      "DiffFolder": [
+        "dotnet/api"
+      ]
     }
   ],
   "notification_subscribers": [],
