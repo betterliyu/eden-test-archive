@@ -34,17 +34,17 @@
         ]
       },
       "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
+        "SourceXmlFolder": "eden-test-archive/xml",
+        "OutputYamlFolder": "eden-test-archive/api",
         "Flatten": true,
-        "id": "dotnet-template",
+        "id": "eden-test-archive",
         "SDPMode": true
       },
       "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
+        "eden-test-archive/api/eden-test-archive/toc.yml"
       ],
       "DiffFolder": [
-        "dotnet/api"
+        "eden-test-archive/api"
       ]
     }
   ],
