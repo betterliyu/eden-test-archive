@@ -21,8 +21,6 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "base_path": "dotnet",
-      "site_name": "Docs",
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -68,8 +66,6 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "base_path": "dotnet",
-      "site_name": "Docs",
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
@@ -93,6 +89,19 @@
       "DiffFolder": [
         "eden-test-archive-docset2/api"
       ]
+    },
+    {
+      "docset_name": "eden-test-archive-docset4",
+      "build_source_folder": "eden-test-archive-docset4",
+      "build_output_subfolder": "eden-test-archive-docset4",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "op"
     }
   ],
   "notification_subscribers": [],
