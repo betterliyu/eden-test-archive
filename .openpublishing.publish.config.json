@@ -1,143 +1,10 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "eden-test-archive",
-      "build_source_folder": "eden-test-archive",
-      "build_output_subfolder": "eden-test-archive",
-      "locale": "en-us",
-      "monikers": [
-        "edenMoniker-v1.0"
-      ],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ]
-      },
-      "ECMA2Yaml": {
-        "SourceXmlFolder": "eden-test-archive/xml",
-        "OutputYamlFolder": "eden-test-archive/api",
-        "Flatten": true,
-        "id": "eden-test-archive",
-        "SDPMode": true
-      },
-      "SplitTOC": [
-        "eden-test-archive/api/eden-test-archive/toc.yml"
-      ],
-      "DiffFolder": [
-        "eden-test-archive/api"
-      ]
-    },
-    {
-      "docset_name": "eden-test-archive-docset2",
-      "build_source_folder": "eden-test-archive-docset2",
-      "build_output_subfolder": "eden-test-archive-docset2",
-      "locale": "en-us",
-      "monikers": [
-        "edenMoniker-v1.0"
-      ],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ]
-      },
-      "ECMA2Yaml": {
-        "SourceXmlFolder": "eden-test-archive-docset2/xml",
-        "OutputYamlFolder": "eden-test-archive-docset2/api",
-        "Flatten": true,
-        "id": "eden-test-archive-docset2",
-        "SDPMode": true
-      },
-      "SplitTOC": [
-        "eden-test-archive-docset2/api/eden-test-archive-docset2/toc.yml"
-      ],
-      "DiffFolder": [
-        "eden-test-archive-docset2/api"
-      ]
-    },
-    {
-      "docset_name": "eden-test-archive-docset4",
-      "build_source_folder": "eden-test-archive-docset4",
-      "build_output_subfolder": "eden-test-archive-docset4",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "NetEnum": "Content",
-        "NetDelegate": "Content",
-        "NetNamespace": "Content",
-        "NetMember": "Content",
-        "NetType": "Content"
-      },
-      "build_entry_point": "op",
-      "template_folder": "_themes",
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/ECMA2Yaml/tools/Run.ps1",
-          "_dependentPackages/CommonPlugins/tools/SplitTOC.ps1",
-          "_dependentPackages/CommonPlugins/tools/DiffFolder.ps1"
-        ],
-        "docset_postbuild": [
-          "_dependentPackages/ECMA2Yaml/tools/PostBuild.ps1"
-        ]
-      },
-      "ECMA2Yaml": {
-        "SourceXmlFolder": "dotnet/xml",
-        "OutputYamlFolder": "dotnet/api",
-        "Flatten": true,
-        "id": "dotnet-template",
-        "SDPMode": true
-      },
-      "SplitTOC": [
-        "dotnet/api/dotnet-template/toc.yml"
-      ],
-      "DiffFolder": [
-        "dotnet/api"
-      ]
-    }
+  "docsets_to_publish": [],
+  "notification_subscribers": [
+    "edenliyu@outlook.com"
   ],
-  "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "git_repository_url_open_to_public_contributors": "",
   "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
   "contribution_branch_mappings": {},
@@ -150,12 +17,8 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": true,
-  "targets": {
-    "pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
+  "need_generate_pdf_url_template": false,
+  "targets": {},
   "docs_build_engine": {
     "name": "docfx_v3"
   },
