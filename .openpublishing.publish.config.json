@@ -1,44 +1,12 @@
 {
-  "docsets_to_publish": [],
-  "notification_subscribers": [
-    "edenliyu@outlook.com"
-  ],
-  "sync_notification_subscribers": [],
-  "branches_to_filter": [],
-  "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
-  "contribution_branch_mappings": {},
-  "dependent_repositories": [
-    {
-      "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft",
-      "branch": "master",
-      "branch_mapping": {}
-    },
-    {
-      "path_to_root": "_themes.pdf",
-      "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
-      "branch": "main",
-      "branch_mapping": {}
-    }
-  ],
   "branch_target_mapping": {
     "live": [
       "Publish",
       "Pdf"
     ]
   },
-  "need_generate_pdf_url_template": true,
-  "targets": {
-    "pdf": {
-      "template_folder": "_themes.pdf"
-    }
-  },
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  },
-  "need_generate_pdf": false,
-  "need_generate_intellisense": false,
+  "branches_to_filter": [],
+  "contribution_branch_mappings": {},
   "dependent_packages": [
     {
       "id": "Microsoft.OpenPublishing.CommonPlugins",
@@ -54,5 +22,38 @@
       "target_framework": "net45",
       "version": "latest-prerelease"
     }
-  ]
+  ],
+  "dependent_repositories": [
+    {
+      "branch": "master",
+      "branch_mapping": {},
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft"
+    },
+    {
+      "branch": "main",
+      "branch_mapping": {},
+      "path_to_root": "_themes.pdf",
+      "url": "https://github.com/Microsoft/templates.docs.msft.pdf"
+    }
+  ],
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  },
+  "docsets_to_publish": [],
+  "git_repository_branch_open_to_public_contributors": "master",
+  "need_generate_intellisense": false,
+  "need_generate_pdf": false,
+  "need_generate_pdf_url_template": true,
+  "need_preview_pull_request": false,
+  "notification_subscribers": [
+    "edenliyu@outlook.com"
+  ],
+  "skip_source_output_uploading": false,
+  "sync_notification_subscribers": [],
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  }
 }
